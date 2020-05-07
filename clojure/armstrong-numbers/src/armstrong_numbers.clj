@@ -1,17 +1,5 @@
 (ns armstrong-numbers)
 
-;; (defn exponent (count (str num)))
-
-;; (defn digits [n]
-;;   (if pos? n)
-;;   (conj (digits (quot n 10) (mod n 10) )
-;;         []))
-;; (defn check [num]
-;;   ())
-
-;; (defn armstrong? [num]
-;;   (if (= (num))))
-
 (defn exp [x n]
   (reduce * (repeat n x)))
 
@@ -23,4 +11,4 @@
         len (count digits)]
     (= num (reduce #(+ %1 (exp %2 len)) 0 digits))))
 
-(armstrong? 153)
+(armstrong? 21897142587612075)
